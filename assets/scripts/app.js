@@ -24,7 +24,7 @@ const searchHandler = e => {
   notFound.style.display = 'none';
   rootElement.innerHTML = '';
   if (e.key === 'Enter') {
-    fetch(`http://api.urbandictionary.com/v0/define?term=${inputValue}`)
+    fetch(`https://api.urbandictionary.com/v0/define?term=${inputValue}`)
       .then(res => res.json())
       .then(data => {
         console.log(`${data.list[1].word} ${data.list[0].definition}`);
