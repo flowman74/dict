@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
+body {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  color: mediumblue;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#container {
+  display: grid;
+  place-items: center;
+}
+
+#title {
+  margin-bottom: 35px;
+  font-family: 'Pangolin', cursive;
+  font-size: 64px;
+}
+
+#search-input {
+  margin-bottom: 35px;
+  padding: 10px;
+  width: 50vw;
+  border: solid 5px royalblue;
+  border-radius: 25px;
+  font-size: 30px;
+}
+
+#not-found {
+  display: none;
+  font-size: 80px;
+}
+
+.card {
+  width: 30vw;
+  margin: 10px 0;
+  padding: 16px;
+  border: solid 2px black;
+}
+
+.card__term {
+  margin-bottom: 10px;
+  font-size: 36px;
+}
+
+.card__def {
+  font-size: 18px;
+}
+
+#credits {
+  margin-top: 35px;
+  padding: 12px;
+  width: fit-content;
+  border: solid 5px black;
+  font-size: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  #search-input {
+    width: 40vw;
+  }
+}
